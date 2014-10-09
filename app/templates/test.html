@@ -1,0 +1,40 @@
+<div class="container-fluid" >
+    <div class="row" ng-controller="TrainController">
+        Ctr Train
+        <input type="text" ng-model="color">
+        Dir Train
+        <train color="color"></train>
+    </div>
+</div>
+<div class="container-fluid" ng-controller="ListenController">
+    <div author play="ListenTo(author)"></div>
+    <div author play="ListenTo(author)"></div>
+</div>
+<div class="container-fluid" >
+    <cars></cars><bike color="blue"></bike><moto color="black"></moto>
+    <div class="row" ng-controller="SkateController">
+        Ctr Scate
+        <input type="text" ng-model="color">
+        skate:<skate color="{{color}}"></skate>
+    </div>
+</div>
+<div class="container-fluid" >
+    <numbers odd>1</numbers>
+    <numbers even prime>2</numbers>
+    <numbers odd prime>3</numbers>
+    <numbers even>4</numbers>
+    <numbers odd prime>5</numbers>
+    <numbers even>6</numbers>
+    <numbers odd>7</numbers>
+    <div class="row" ng-controller="PreFooterController">
+        Pre footer: 
+        <input type="text" ng-model="data.element">
+        {{data.element}}
+    </div>
+    <div class="row" ng-controller="FooterController">
+       <div enter="deleteTweets()">Asi interactuán directives con controllers</div>
+       <div>Footer:</div>
+       <input type="text" ng-model="data.element">
+        {{data.element|reverse}}
+    </div>
+</div>

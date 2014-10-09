@@ -24,7 +24,11 @@ module.exports = function(lineman) {
     // }
 
     server: {
-      pushState: true
+      pushState: true,
+      //base:"dist",
+      //web:{
+      //  port:80    
+      //}
       // API Proxying
       //
       // During development, you'll likely want to make XHR (AJAX) requests to an API on the same
