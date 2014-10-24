@@ -8,8 +8,11 @@ angular.module('app',['ngRoute']).config(function($routeProvider){
         })
         .when("/test",{
             templateUrl:"test.html"  
+        })
+        .when("/users",{
+            templateUrl:"users.html",
+            controller:"UsersController"
         });
-        
 })
 .factory('Data',function(){
     return {element:"Im data from a service"};
